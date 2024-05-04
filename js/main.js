@@ -66,7 +66,7 @@
  
 const numbers = []
 
-let cards = document.getElementById ("cards"); 
+let lista = document.getElementById ("lista"); 
   
 // genero 5 numeri casuali da 1 a 100 tramite una funzione 
 
@@ -84,8 +84,12 @@ let cards = document.getElementById ("cards");
     };
 
        i++;
-    cards.innerHTML += (`<li>${casualNumber}</li>`);
+    lista.innerHTML += (`<li>${casualNumber}</li>`);
 
 }
 
 console.log (numbers);
+
+setTimeout(function() {
+    lista.classList.add("remove");
+}, 3000);
