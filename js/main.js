@@ -43,15 +43,15 @@ setTimeout (function () {
         let numberUser = parseInt(prompt("Inserisci un numero"));
         userInput.push (numberUser);
     }
-    if (userInput.includes(numbers[0])) {
-        console.log ("hai vinto");
 
-    } else {
-        console.log("hai perso");
-    };
+    let score = compair(numbers, userInput);
+
+    console.log ("Numeri indovinati:", score);
+    
 }, 4000);
-
 console.log(userInput);
+
+
 
 
 
